@@ -1,4 +1,4 @@
-const DateComponent = ({ date }) => {
+const FormattedDate = ({ date }) => {
   const emailDate = new Date(date);
   const day = emailDate.getDate();
   const month = emailDate.getMonth() + 1;
@@ -22,4 +22,4 @@ const DateComponent = ({ date }) => {
   return <span>{`${ddmmyyyy} ${hhmma}`}</span>;
 };
 
-export default DateComponent;
+export default FormattedDate;

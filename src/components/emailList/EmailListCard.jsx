@@ -5,7 +5,7 @@ import {
   toggleViewMode,
 } from "../../features/emailList/emailListSlice";
 import Avatar from "../avatar/Avatar";
-import DateComponent from "../dateComponent/DateComponent";
+import FormattedDate from "../date/FormattedDate";
 import "./EmailListCard.css";
 
 const EmailListCard = ({ id, from, subject, short_description, date }) => {
@@ -49,7 +49,7 @@ const EmailListCard = ({ id, from, subject, short_description, date }) => {
         </p>
 
         <div className="emailList-card_date-container">
-          <DateComponent date={date} />
+          <FormattedDate date={date} />
           <p className="emailList-card_favorite">
             {isThere(favoriteEmail, id) && "Favorite"}
           </p>

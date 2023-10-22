@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import Avatar from "../../components/avatar/Avatar";
-import DateComponent from "../../components/dateComponent/dateComponent";
+
 import { addFavorite, removeFavorite } from "../emailList/emailListSlice";
 import "./EmailBody.css";
+import FormattedDate from "../../components/date/FormattedDate";
 
 const EmailBody = () => {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ const EmailBody = () => {
                     : "Add to Favorite"}
                 </button>
               </div>
-              <DateComponent date={currentEmail.date} />
+              <FormattedDate date={currentEmail.date} />
               <div
                 dangerouslySetInnerHTML={{ __html: body }}
                 className="emailBody-right_body"

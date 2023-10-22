@@ -1,0 +1,30 @@
+.emailList {
+  height: calc(100vh - 73px);
+  overflow-y: scroll;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  margin-right: 10px;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.active-button {
+  background: var(--accent);
+  color: #fff;
+}

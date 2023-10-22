@@ -1,0 +1,41 @@
+.emailBody {
+  display: flex;
+  border: 1.5px solid var(--border);
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background: #fff;
+  border-radius: 5px;
+  margin-left: 8px;
+  height: calc(100vh - 73px);
+  overflow-y: scroll;
+  width: 62vw;
+}
+
+.emailBody-right-container {
+  margin-left: 15px;
+}
+
+.emailBody-right_top-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.emailBody-right_sender {
+  font-weight: 500;
+}
+
+.emailBody-right_button {
+  background: var(--accent);
+  border: none;
+  font-family: inherit;
+  border-radius: 25px;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.emailBody-right_body {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
